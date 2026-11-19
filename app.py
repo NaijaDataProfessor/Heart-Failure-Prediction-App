@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 st.set_page_config(page_title="Heart Failure Prediction", page_icon="💓", layout="wide")
-st.title("💓 Heart Failure Risk Prediction")
+st.title("💓 Heart Failure Prediction App")
 st.caption("Educational decision-support prototype — not a diagnostic tool.")
 
 NUM = ["age", "restingbp", "cholesterol", "fastingbs", "maxhr", "oldpeak"]
