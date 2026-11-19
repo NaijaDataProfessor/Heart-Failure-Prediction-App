@@ -99,7 +99,7 @@ with st.form("prediction_form"):
     c4, c5, c6 = st.columns(3)
     restingbp = c4.number_input("Resting blood pressure (mmHg)", min_value=1, max_value=300, value=130)
     cholesterol = c5.number_input("Cholesterol (mg/dL)", min_value=1, max_value=1000, value=200)
-    fastingbs = c6.selectbox("Fasting blood sugar > 120 mg/dL", [0, 1], format_func=lambda x: "No (0)" if x == 0 else "Yes (1)")
+    fastingbs = c6.selectbox("Fasting blood sugar > 120 mg/dL", [0, 1], format_func=lambda x: "No" if x == 0 else "Yes")
     c7, c8, c9 = st.columns(3)
     restingecg = c7.selectbox("Resting ECG", ["Normal", "ST", "LVH"])
     maxhr = c8.number_input("Maximum heart rate achieved (bpm)", min_value=1, max_value=300, value=150)
