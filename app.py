@@ -21,8 +21,8 @@ FEATURES = NUM + CAT
 TARGET = "heartdisease"
 DEFAULT_THRESHOLD = 0.40
 BASE = Path(__file__).parent
-ARTIFACT = Path(r"C:\Users\Data Professor\Downloads\Heart failure App\rf_model.joblib")
-DATASET = Path(r"C:\Users\Data Professor\Downloads\Heart failure App\heart.csv")
+ARTIFACT = BASE / "rf_model.joblib"
+DATASET = BASE / "heart.csv"
 
 def make_pipeline():
     num_pipe = Pipeline([("imputer", SimpleImputer(strategy="median")), ("scaler", StandardScaler())])
